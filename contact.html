@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <title>Jim's Clothes Closet | Denim to Suits for the Quality Man</title>
+    <link
+        rel="stylesheet"
+        href="styleTemp.css" />
+</head>
+<body>
+    <header class="">
+        <div class="wrapper">
+            <div class="logoHeader"></div>
+            <h1>
+                Denim to Suits
+                <br />
+                for the quality man
+            </h1>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+
+    <!-- Mobile Navigation -->
+
+    <nav class="mobileNav">
+        <span class="mobileNavSelector"> </span>
+        <span class="mobileNavSelector"> </span>
+        <span class="mobileNavSelector"> </span>
+    </nav>
+
+    <!-- Main Nav -->
+    <nav class="desk shadowDown">
+        <div class="wrapper">
+            <a
+                class="logo"
+                href="index.html"></a>
+            <ul class="navBar">
+                <li><a href="brands.html">Brands</a></li>
+                <li class="dropDown">
+                    <a href="#ShopAll">Shop</a>
+                    <div class="dropDownMenu">
+                        <a href="#">Shop All</a>
+                        <a href="#">Big & Tall</a>
+                        <a href="contact.html">Personal Shopping</a>
+                        <a href="contact.html">Custom Suits</a>
+                   </div>
+                </li>
+                <li><a href="locations.html">Locations</a></li>
+                <li class="dropDown">
+                    <a href="#">Catalogue</a>
+                    <div class="dropDownMenu">
+                        <a href="#">2022</a>
+                        <a href="#">2021</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="wrapper">
+        <div class="__separation__" style="background: var(--primary)">
+            <h2>Contact Us</h2>
+        </div>
+        <!-- contact form code was inspired by a tutorial -->
+        <!-- Tutorial https://www.youtube.com/watch?v=YBUMHRL1fmo -->
+
+        <!-- js format phone number tutorial -->
+        <!-- https://www.youtube.com/watch?v=3Cl03G2cyAA -->
+        <section class="contactForm">
+
+            <div class="contactFormWrapper">
+            <form action="post">
+                
+                <div class="formGroup">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" 
+                    required class="formElement"
+                    placeholder="John">
+                </div>
+                <div class="formGroup">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" 
+                    required class="formElement"
+                    placeholder="Doe">
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" 
+                    required class="formElement"
+                    placeholder="johndoe@domain.com">
+                </div>
+                <div class="formGroup">
+                    <label for="telephone">Phone</label>
+                    <input  type="tel" name="telephone" id="telephone" 
+                    class="formElement"
+                    onkeydown="phoneNumberFormatter()"
+                    required 
+                    placeholder="(123) 456-7890">
+                </div>
+                <div class="formGroup">
+
+                    <label for="prefContact">Select a contact method</label>
+                <legend class="contactPrefLegend">
+                    <div class="selectWrapper">
+                            <label class="contactPref row1 col2" for="emailPref">Email</label>
+                            <input type="radio" name="prefContact" id="emailPref" 
+                            required class="contactPref row1 col1"
+                            placeholder="johndoe@domain.com" checked>
+                            <input type="radio" name="prefContact" id="telPref" 
+                            required class="contactPref row2 col1"
+                            placeholder="johndoe@domain.com">
+                            <label class="contactPref row2 col2" for="telPref">Phone</label>
+                        </div>
+                    </div>
+                
+                </legend>
+                <div class="formGroup">
+                    <label for="subject">Subject</label>
+                    <select name="subject" id="subject"  class="widthFull" required>
+                        <option value="" selected disabled>-- Select an Option --</option>
+                        <option value="asds">Questions</option>
+                        <option value="">Book a Tailoring</option>
+                        <option value="">Book an Afterhour Shopping</option>
+                        <option value="">Report an Issue</option>
+                    </select>
+                </div>
+                <div class="formGroup full">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Message" class="formElement" required></textarea>
+                </div>
+                <div class="submitGroup">
+                    <button type="reset" class="reset">Reset</button>
+                <div class="submitGroup">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="shadowUp">
+        <div class="wrapper alignCenter">
+            <div class="footerSocials">
+                <a
+                    href="#"
+                    target="_blank"
+                    title="Contact Us">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon-fill"
+                        width="25"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z" />
+                    </svg>
+                </a>
+                <a
+                    href="#"
+                    target="_blank"
+                    title="Facebook">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon-fill"
+                        width="18"
+                        viewBox="0 0 320 512">
+                        <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                    </svg>
+                </a>
+                <a
+                    href="#"
+                    target="_blank"
+                    title="Instagram">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="icon-fill"
+                        width="25"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+            </div>
+            <ul class="footerLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Big & Tall</a></li>
+                <li><a href="#">Custom Suits</a></li>
+                <li><a href="#">Media Kit</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Employees</a></li>
+            </ul>
+            <span class="copy">this website was created for a school project, it is not a real site</span>
+        </div>
+    </footer>
+</body>
+<script>
+    function formatPhoneNumber(value) {
+      if (!value) return value;
+      const phoneNumber = value.replace(/[^\d]/g, '');
+      const phoneNumberLength = phoneNumber.length;
+      if (phoneNumberLength < 4) return phoneNumber;
+      if (phoneNumberLength < 7) {
+        return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+      }
+      return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(
+        3,
+        6
+        /* needed to make this 10, because it deletes the last number
+           when you hit enter.*/
+      )}-${phoneNumber.slice(6, 10)}`;
+    }
+
+    function phoneNumberFormatter() {
+      const inputField = document.getElementById('telephone');
+      const formattedInputValue = formatPhoneNumber(inputField.value);
+      inputField.value = formattedInputValue;
+    }
+  </script>
+</html>
